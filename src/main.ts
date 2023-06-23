@@ -31,8 +31,8 @@ async function bootstrap() {
     }),
   );
   const config = new DocumentBuilder()
-    .setTitle('[BuildUs] chatGPT API')
-    .setDescription('[BuildUs] chatGPT API')
+    .setTitle('[arzMETA] arzMETA API')
+    .setDescription('[arzMETA] arzMETA API')
     .addCookieAuth('connect.sid')
     .setVersion('1.0.0')
     .build();
