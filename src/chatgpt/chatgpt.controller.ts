@@ -14,19 +14,6 @@ import { CreateChatGPTDTO } from './dto/create.chatgpt.dto';
 export class ChatgptController {
   constructor(private readonly chatgptService: ChatgptService) {}
 
-  //   @ApiResponse({
-  //     status: HttpStatus.FORBIDDEN,
-  //     description: 'Error',
-  //   })
-  //   @ApiResponse({
-  //     status: HttpStatus.OK,
-  //   })
-  //   @ApiOperation({ summary: 'chatGPT' })
-  //   //   @UseGuards(LoggedInGuard)
-  //   @Post()
-  //   async getChatGPT(@Body() data: CreateChatGPTDTO) {
-  //     return await this.chatgptService.chatGPT(data);
-  //   }
 
   @ApiOperation({ summary: '헬스트레이너' })
   //   @UseGuards(LoggedInGuard)
