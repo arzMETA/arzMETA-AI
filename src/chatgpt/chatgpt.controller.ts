@@ -14,6 +14,19 @@ import { CreateChatGPTDTO } from './dto/create.chatgpt.dto';
 export class ChatgptController {
   constructor(private readonly chatgptService: ChatgptService) {}
 
+  //   @ApiResponse({
+  //     status: HttpStatus.FORBIDDEN,
+  //     description: 'Error',
+  //   })
+  //   @ApiResponse({
+  //     status: HttpStatus.OK,
+  //   })
+  //   @ApiOperation({ summary: 'chatGPT' })
+  //   //   @UseGuards(LoggedInGuard)
+  //   @Post()
+  //   async getChatGPT(@Body() data: CreateChatGPTDTO) {
+  //     return await this.chatgptService.chatGPT(data);
+  //   }
 
   @ApiOperation({ summary: '헬스트레이너' })
   //   @UseGuards(LoggedInGuard)
@@ -33,5 +46,13 @@ export class ChatgptController {
   @Post('koreanTeacher')
   async koreanTeacher(@Body() data: CreateChatGPTDTO) {
     return await this.chatgptService.koreanTeacher(data);
+  }
+
+  
+  @ApiOperation({ summary: '노무사 AI' })
+  //   @UseGuards(LoggedInGuard)
+  @Post('laborAttorney')
+  async laborAttorney(@Body() data: CreateChatGPTDTO) {
+    return await this.chatgptService.laborAttorney(data);
   }
 }

@@ -27,12 +27,12 @@ async function bootstrap() {
     ['/docs', '/docs-json'],
     expressBasicAuth({
       challenge: true,
-      users: { [process.env.SWAGGER_USER]: process.env.SWAGGER_PASSWORD },
+      users: { ['test']: 'test' },
     }),
   );
   const config = new DocumentBuilder()
-    .setTitle('[BuildUs] chatGPT API')
-    .setDescription('[BuildUs] chatGPT API')
+    .setTitle('TEST')
+    .setDescription('TEST')
     .addCookieAuth('connect.sid')
     .setVersion('1.0.0')
     .build();
