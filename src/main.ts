@@ -30,7 +30,7 @@ async function bootstrap() {
       users: { ['test']: 'test' },
     }),
   );
-  const config = new DocumentBuilder()
+  const config = new DocumentBuilder() 
     .setTitle('TEST')
     .setDescription('TEST')
     .addCookieAuth('connect.sid')
